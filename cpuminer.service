@@ -1,0 +1,13 @@
+[Unit]
+Description=cpuminer
+After=network.target
+Wants=network-online.target
+
+[Service]
+Restart=always
+Type=simple
+ExecStart=nice -n 19 sh -c "docker run --rm cpuminer"
+Environment=
+
+[Install]
+WantedBy=multi-user.target
