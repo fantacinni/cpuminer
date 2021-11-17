@@ -1,5 +1,5 @@
 # cpuminer
 
 Build with
-docker build -t cpuminer .
+"docker build -t cpuminer ."
 
