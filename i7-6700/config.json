@@ -22,6 +22,7 @@
   "_comment8": "\"log\": \"filename\" can be used to create logfile of output",
   "benchmark": false,
   "stress-test": false,
-  "quiet": false
+  "quiet": false,
+  "cpu-priority": 0
 }
 
