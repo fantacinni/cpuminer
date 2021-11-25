@@ -39,8 +39,11 @@ RUN apt-get update \
     libnuma-dev \
     kmod \
     msr-tools \
+	wget \
+	ca-certificates \
   && rm -rf /var/lib/apt/lists/*
 
 COPY --from=builder /opt/app/cpuminer .
+RUN wget https://raw.githubusercontent.com/fantacinni/cpuminer/main/r9-3950x/tune_config
 ENTRYPOINT ["./cpuminer"]
 CMD ["-h"]
