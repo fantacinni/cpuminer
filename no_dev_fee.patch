@@ -1,0 +1,12 @@
+diff --git a/cpu-miner.c b/cpu-miner.c
+index 6b5b6e3..8a9d1f6 100644
+--- a/cpu-miner.c
++++ b/cpu-miner.c
+@@ -3254,7 +3254,6 @@ static void *stratum_thread(void *userdata) {
+   }
+ 
+   while (1) {
+-    donation_switch();
+ 
+     if (!stratum_check(false)) {
+       // Only if opt_retries are set and not dev_mining.
